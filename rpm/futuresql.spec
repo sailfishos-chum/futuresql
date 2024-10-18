@@ -18,6 +18,7 @@ BuildRequires: kf6-extra-cmake-modules
 BuildRequires: gcc-c++
 BuildRequires: ninja
 BuildRequires: qt6-qtbase-devel
+BuildRequires: qcoro-qt6-devel
 
 %description %_description
 
@@ -28,6 +29,7 @@ Summary: Non-blocking database framework for Qt 6
 Summary: Development files for FutureSQL (Qt 6 version)
 Requires: %{name}-qt6%{?_isa} = %{?epoch:%{epoch}:}%{version}-%{release}
 Requires: qt6-qtbase-devel%{?_isa}
+Requires: qcoro-qt6-devel
 
 %description qt6 %_description
 %description qt6-devel %_description
